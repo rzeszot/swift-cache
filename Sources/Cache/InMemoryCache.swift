@@ -4,6 +4,8 @@ public class InMemoryCache<Key: Hashable, Value> {
 
     private var storage: [Key: Value] = [:]
 
+    public init() {}
+
     // MARK: - Cache
 
     public func read(for key: Key) throws -> Value? {
